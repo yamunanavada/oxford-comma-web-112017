@@ -5,13 +5,9 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(" and ")
   else
-    arr_end = []
-    2.times do
-      arr_end.unshift(array.pop)
-    end
-
+    last = array.pop
     string = array.join(", ")
-    string+= arr_end.join(" and ")
+    string += last
 
 
   end
